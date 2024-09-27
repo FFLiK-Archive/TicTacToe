@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RevivalActivity"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/rect"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="#202020"
+                android:fontFamily="@font/font"
+                android:text="ITEM"
+                android:textColor="#AAAAAA"
+                android:textSize="30dp"
+                android:layout_centerVertical="true" />
+
+            <Button
+                android:id="@+id/revival_close_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="▼"
+                android:textSize="30dp"
+                android:fontFamily="@font/nexon"
+                android:textColor="#666666"
+                android:background="#00000000"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:adjustViewBounds="true"
+            android:layout_height="0dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="3"
+            android:src = "@drawable/revival"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/store_item_area"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/revival_timer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="5"
+            android:textSize="50dp"
+            android:gravity="center"
+            android:textColor="#AAAAAA"
+            android:fontFamily="@font/font"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+            <Button
+                android:id="@+id/revival_use_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="USE"
+                android:textColor="#CCCCCC"
+                android:fontFamily="@font/font"
+                android:textSize="25dp"
+                android:padding="15dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/std_btn"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

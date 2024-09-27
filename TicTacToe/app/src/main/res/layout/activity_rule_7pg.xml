@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RuleActivity"
+    android:orientation="vertical"
+    android:background="#151515"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="#333333"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tic Tac Toe"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:fontFamily="@font/font"
+            android:textColor="#CCCCCC"
+            android:layout_weight="2"/>
+        <LinearLayout
+            android:id="@+id/time_bar_space"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#777777"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/revival"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/freeze"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="아이템은 부활 아이템과 얼음 아이템 두가지가 있습니다."
+        android:textSize="20dp"
+        android:fontFamily="@font/font_ko"
+        android:textColor="#CCCCCC"
+        android:layout_weight="2.5"
+        android:gravity="center"
+        android:paddingHorizontal="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="#999999"
+        android:text="○ ○ ○ ○ ○ ○ ● ○"
+        android:textSize="15dp"
+        android:gravity="center"/>
+</LinearLayout>

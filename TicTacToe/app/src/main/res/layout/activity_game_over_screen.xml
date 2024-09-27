@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameOverScreen"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect"
+        android:layout_centerInParent="true"
+        android:padding="50dp"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="POINT"
+            android:textColor="#AAAAAA"
+            android:fontFamily="@font/font"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="0"
+            android:textColor="#EEEEEE"
+            android:fontFamily="@font/font"
+            android:textSize="40dp"
+            android:autoSizeTextType="uniform"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="0"
+            android:textColor="#ffe56e"
+            android:fontFamily="@font/font"
+            android:textSize="25dp"
+            android:autoSizeTextType="uniform"
+            android:layout_weight="0"/>
+
+        <Button
+            android:id="@+id/return_button"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="quit"
+            android:textColor="#AAAAAA"
+            android:background="@drawable/std_btn"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

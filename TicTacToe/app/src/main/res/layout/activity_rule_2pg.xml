@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RuleActivity"
+    android:orientation="vertical"
+    android:background="#151515"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="#333333"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tic Tac Toe"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:fontFamily="@font/font"
+            android:textColor="#CCCCCC"
+            android:layout_weight="2"/>
+        <LinearLayout
+            android:id="@+id/time_bar_space"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#777777"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:src="@drawable/rule_2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="얼마나 빨리 O를 그리느냐에 따라 점수가 결정됩니다."
+        android:textSize="20dp"
+        android:fontFamily="@font/font_ko"
+        android:textColor="#CCCCCC"
+        android:layout_weight="2.5"
+        android:gravity="center"
+        android:paddingHorizontal="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="#999999"
+        android:text="○ ● ○ ○ ○ ○ ○ ○"
+        android:textSize="15dp"
+        android:gravity="center"/>
+</LinearLayout>
