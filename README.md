@@ -1,3 +1,3 @@
 # TicTacToe
 
-> 스테이지 기반의 틱택토 게임 애플리케이션
+> Stage-Based TicTacToe Game Application
